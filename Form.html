@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        
+        #Information{background-color:rgb(204, 187, 237);
+            border: 2px solid black;
+            width: 50%;
+            
+            border-radius: 5px;
+            padding: 10px;
+            margin: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: auto;
+            margin-bottom: auto; 
+        }
+
+        input{text-align: center;
+            border: 1px solid;
+            border-radius: 5px;
+            margin: 5px;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 5px;}
+
+    </style>
+</head>
+
+<body>
+  
+    <div id="Information">
+     
+    <fieldset style="background-color: white;">
+        <legend align="center"><b>Personal Details</b></legend>
+        <span>First Name:</span>
+       <input type="text" focus placeholder="Enter First Name.." required/></br>
+       <span>Last Name:</span>
+       <input type="text"focus placeholder="Enter Your Last Name.." required/></br>
+       <span>Enrollment No.:</span>
+       <input type="text" maxlength="12" required/></br>
+       <span>Address</span>
+       <textarea raw="5" focus placeholder="Enter Your Address Here.."width="200px" maxlength="200"></textarea></br>
+       <span>Gender:</span>
+      <input type="radio" id="female" name="Gender" value="Female"><span>Female</span>
+      <input type="radio" id="male" name="Gender" value="Male"><span>Male</span>
+      <input type="radio" id="other" name="Gender" value="Other"><span>Other</span></br>
+       <span>Hobbie:</span>
+       <input type="checkbox"/> Tech
+       <input type="checkbox"/> Non-Tech  
+           
+
+    </fieldset>
+    <fieldset style="background-color: white;">
+        <legend align="center"><b>College Details</b></legend>
+        <span>NAme Of College:</span>
+        <input type="text" required/></br>
+        <span>Department:</span>
+        <input type="text"/><br>
+        <span>Password:</span>
+        <input type="password"><br/>
+        <span>Division:</span>
+        <select focus placeholder="Choose Division">
+            <option value="1">A</option>
+            <option value="2">B</option>
+            <option value="3">C</option>
+            <option value="4">D</option>
+        </select>
+    </fieldset>
+    <input type="submit"/>
+
+    </div>
+
+</body>
+</html>
